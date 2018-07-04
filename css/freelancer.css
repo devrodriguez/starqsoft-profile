@@ -41,8 +41,6 @@ hr.star-primary {
 }
 hr.star-light:after,
 hr.star-primary:after {
-  content: "\f005";
-  font-family: FontAwesome;
   display: inline-block;
   position: relative;
   top: -0.8em;
@@ -68,16 +66,23 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #1895bc;
+  background: #1877bc;
   color: white;
+  background: url(../img/background.jpg) 50% top / cover no-repeat rgb(37, 51, 64);
 }
 header .container {
   padding-top: 100px;
   padding-bottom: 50px;
 }
+
+header .bg-image {
+  background-image: '../img/background.jpg';
+}
+
 header img {
   display: block;
   margin: 0 auto 20px;
+  box-shadow: 0px 3px 2px #999;
 }
 header .intro-text .name {
   display: block;
@@ -108,6 +113,7 @@ header .intro-text .skills {
   text-transform: uppercase;
   font-weight: 700;
   border: none;
+  box-shadow: 0px 1px 8px;
 }
 .navbar-custom .navbar-brand {
   color: white;
@@ -153,6 +159,17 @@ header .intro-text .skills {
   color: white;
   border-color: #18BC9C;
 }
+
+.img-dummie {
+  background-color: #2C3E50;
+  min-height: 290px;
+  width: 100%;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 25px 0;
@@ -181,7 +198,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #18BC9C;
+  background: #188dbc;
   color: white;
 }
 @media (max-width: 767px) {
